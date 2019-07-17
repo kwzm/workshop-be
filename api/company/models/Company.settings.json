@@ -1,0 +1,20 @@
+{
+  "connection": "default",
+  "collectionName": "companies",
+  "info": {
+    "name": "company",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    }
+  }
+}

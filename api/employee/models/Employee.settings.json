@@ -1,0 +1,58 @@
+{
+  "connection": "default",
+  "collectionName": "employees",
+  "info": {
+    "name": "employee",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "telephone": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "hiredate": {
+      "unique": true,
+      "required": true,
+      "type": "date"
+    },
+    "email": {
+      "unique": true,
+      "required": true,
+      "type": "email"
+    },
+    "company": {
+      "model": "company"
+    },
+    "department": {
+      "model": "department"
+    },
+    "age": {
+      "type": "integer",
+      "unique": true,
+      "required": true
+    },
+    "remark": {
+      "type": "text"
+    },
+    "position": {
+      "model": "position"
+    },
+    "status": {
+      "model": "status"
+    }
+  }
+}

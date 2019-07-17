@@ -1,0 +1,20 @@
+{
+  "connection": "default",
+  "collectionName": "positions",
+  "info": {
+    "name": "position",
+    "description": "职位"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    }
+  }
+}

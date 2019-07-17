@@ -1,0 +1,21 @@
+{
+  "connection": "default",
+  "collectionName": "departments",
+  "info": {
+    "name": "department",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}
